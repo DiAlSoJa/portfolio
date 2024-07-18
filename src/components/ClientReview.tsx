@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 interface Props{
-    name: String,
-    role:String,
-    image: String
+    name: string,
+    role:string,
+    image: string
 }
 
 const ClientReview = ({ name, role, image }: Props) => {
