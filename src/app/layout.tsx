@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import { ThemeProvider } from "../../providers/theme-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,11 +18,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <Script src="https://kit.fontawesome.com/a92882eca5.js"></Script>
-      </head>
+
       <body className="font-primary">
-        {children}
+        <ThemeProvider
+         attribute="class"
+         defaultTheme="system"
+         enableSystem
+         disableTransitionOnChange
+         storageKey="jotion-theme-2"
+         >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,28 +1,42 @@
-interface Props{
-    openNav:()=>void
-}
-const Nav = ({openNav}:Props) => {
-    return (
-      <div className="w-[100%] fixed z-[10000] top-0 h-[12vh] bg-[#1A1C27] shadow-md">
-        <div className="flex items-center justify-between w-[80%] mx-auto h-[100%]">
-          <h1 className="flex-[0.6] cursor-pointer text-[25px] text-white font-bold">
-            WEB
-            <span className="text-yellow-300">DEV</span>
-          </h1>
-          
-            <div className="nav-link">Home</div>
-            <div className="nav-link">SERVICES</div>
-            <div className="nav-link">ABOUT</div>
-            <div className="nav-link">PROJECT</div>
-            <div className="nav-link">BLOG</div>
-            <div className="nav-link">CONTACT</div>
+import { Menu } from "lucide-react";
+import { ModeToggle } from "./mode-toggle";
+import { Button } from "./ui/button";
 
-            <div onClick={openNav} className="cursor-pointer text-yellow-300 text-[27px] md:hidden">
-                <i className="fa-solid fa-bars"></i>
+interface Props {
+    openNav: () => void;
+}
+
+const Nav = ({ openNav }: Props) => {
+    return (
+        <header className="w-full fixed z-50 top-0 h-12  dark:bg-slate-800 bg-slate-100 shadow-md">
+            <div className="flex items-center  justify-between mx-auto h-full max-w-6xl px-4">
+                
+                <div className="text-lg text-slate-800 dark:text-slate-100 font-bold cursor-pointer">
+                    Diego <span className="text-fuchsia-700">Soto</span>
+                </div>
+                
+                <ul className="items-center gap-4 hidden md:flex">
+                    <li className="nav-link"><a href="#">Home</a></li>
+                    <li className="nav-link"><a href="#">Servicios</a></li>
+                    <li className="nav-link"><a href="#">Sobre mi</a></li>
+                    <li className="nav-link"><a href="#">Proyectos</a></li>
+                    <li className="nav-link"><a href="#">Blogs</a></li>
+                    <li className="nav-link"><a href="#">Contacto</a></li>
+                </ul>
+
+                <div className="flex items-center">
+
+                  <ModeToggle/>
+
+                  <Button onClick={openNav} variant={"ghost"} className=" md:hidden">
+                    <Menu />
+                  </Button>
+
+                </div>
+
             </div>
-        </div>
-      </div>
+        </header>
     );
-  };
+};
 
 export default Nav;
