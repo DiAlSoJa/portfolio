@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Projects = () => {
   return (
-    <div className=" pt-[4rem] md:pt-[8rem] pb-[1rem]">
+    <div className=" pt-[4rem] md:pt-[8rem] pb-[1rem]" id="proyectos">
       <h2 className="text-center text-[3rem]">
         Mis<span className="text-yellow-400"> proyectos</span>
       </h2>

@@ -13,11 +13,11 @@ const TextEffect = () => {
         1500,
         "Backend Developer",
         1500,
-        "Full stach developer",
+        "Full stack developer",
         1500,
       ]}
       speed={50}
-      className="text-[2rem] md:text-[3rem] text-slate-800 dark:text-slate-100 dar font-bold uppercase"
+      className="text-[1.5rem] md:text-[3rem]  text-slate-800 dark:text-slate-100 dar font-bold uppercase"
       repeat={Infinity}
     />
   );

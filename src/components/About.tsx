@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 
 const About = () => {
   return (
-    <div className=" pb-[3rem] pt-[4rem] md:pt-[8rem]">
+    <div className=" pb-[3rem] pt-[4rem] md:pt-[8rem]" id="sobreMi">
       <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
         <div>
           <h2 className="text-[20px] font-bold uppercase text-yellow-500 mb-[1rem]">

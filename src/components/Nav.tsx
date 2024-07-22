@@ -16,12 +16,12 @@ const Nav = ({ openNav }: Props) => {
                 </div>
                 
                 <ul className="items-center gap-4 hidden md:flex">
-                    <li className="nav-link"><a href="#">Home</a></li>
-                    <li className="nav-link"><a href="#">Servicios</a></li>
-                    <li className="nav-link"><a href="#">Sobre mi</a></li>
-                    <li className="nav-link"><a href="#">Proyectos</a></li>
-                    <li className="nav-link"><a href="#">Blogs</a></li>
-                    <li className="nav-link"><a href="#">Contacto</a></li>
+                    <li className="nav-link"><a href="#inico">Inicio</a></li>
+                    <li className="nav-link"><a href="#servicios">Servicios</a></li>
+                    <li className="nav-link"><a href="#sobreMi">Sobre mi</a></li>
+                    <li className="nav-link"><a href="#proyectos">Proyectos</a></li>
+                    <li className="nav-link"><a href="#blogs">Blogs</a></li>
+                    <li className="nav-link"><a href="#contacto">Contacto</a></li>
                 </ul>
 
                 <div className="flex items-center">

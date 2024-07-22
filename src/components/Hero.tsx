@@ -6,18 +6,18 @@ import { Button } from "./ui/button";
 
 const Hero = () => {
   return (
-    <div className="h-[90vh] mt-[48px]  bg-slate-100 dark:bg-slate-900">
+    <div id="inicio" className="h-[90vh] mt-[48px]  bg-slate-100 dark:bg-slate-900">
    
-      <div className=" flex items-center justify-center h-full">
+      <div className=" flex items-center justify-center h-full max-md:px-5">
 
         <div>
-          <h2 className="text-[3rem]">Hola soy</h2>
+          <h2 className="text-[3rem] max-md:text-[2rem]">Hola soy</h2>
 
-          <h1 className="text-[5rem]  text-fuchsia-700 font-bold">
+          <h1 className="text-[5rem]  text-fuchsia-700 font-bold max-md:text-[3rem]">
             Diego Soto.
           </h1>
 
-          <h2 className="text-[3rem]">Soy <TextEffect /></h2>
+          <h2 className="text-[3rem] max-md:text-[2rem] flex flex-col md:block"><span>Soy</span> <TextEffect /></h2>
           
           <p className="mt-[2rem] text-[20px] text-slate-800 dark:text-slate-100">
               Cualquiera que se tu nuevo projecto, conmigo ten por seguro que vas a tener calidad.

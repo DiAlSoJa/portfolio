@@ -21,7 +21,7 @@ const Blog = () => {
   }, []); 
 
   return (
-    <div className="pt-[4rem] md:pt-[8rem] pb-[4rem] ">
+    <div className="pt-[4rem] md:pt-[8rem] pb-[4rem] " id="blogs">
       <h2 className="text-[3rem] text-center">
         Algunos <span className="text-yellow-400">Posts</span>
       </h2>
@@ -43,7 +43,7 @@ export default Blog;
 const BlogCard = ({ post }:{post:any}) => {
   console.log(post)
   return (
-    <Link href={`https://www.sanivers.com/article/${post.slug}`} className="max-w-sm mx-auto group hover:no-underline focus:no-underline shadow rounded-md hidden sm:block dark:bg-slate-700">
+    <Link href={`https://www.sanivers.com/article/${post.slug}`} className="max-w-sm mx-auto group hover:no-underline focus:no-underline shadow rounded-md  sm:block dark:bg-slate-700">
       <Image 
         alt={post.slug}
         width="100"
