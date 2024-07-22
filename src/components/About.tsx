@@ -26,11 +26,9 @@ const About = () => {
         </Button>
     </div>
     <div data-aos="fade-left" className="lg:w-[500px] mx-auto md:mx-0 mt-[2rem] lg:mt-0 lg:h-[500px] w-[300px] h-[300px] relative">
-        <Image
+        <img
             src="/images/about.jpg"
             alt="user"
-            layout="fill"
-            objectFit="contain"
             className="relative z-[11] w-[100%] h-[100%] object-contain"
         />
         <div className="absolute w-[100%] h-[100%] z-[10] bg-[#556e65] top-[-2rem] right-[-2rem]"></div>

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Blog = () => {
-  const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState<any[]>([{}]);
 
   useEffect(() => {
     const fetchPosts = async () => {
