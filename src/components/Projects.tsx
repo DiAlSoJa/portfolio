@@ -12,52 +12,8 @@ const Projects = () => {
         Mis<span className="text-yellow-400"> proyectos</span>
       </h2>
       <div className="w-[80%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]">
-        <Link href="/" className="hover:-translate-y-3 transition-all duration-200">
-          <div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
-            <img
-              src="/images/p1.jpg"
-              alt="portfolio"
-              className="w-full h-full object-cover" 
-            />
-          </div>
-        </Link>
-        <Link href="/" className="hover:-translate-y-3 transition-all duration-200">
-          <div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
-            <img
-              src="/images/p1.jpg"
-              alt="portfolio"
-              className="w-full h-full object-cover" 
-            />
-          </div>
-        </Link>
-        <Link href="/" className="hover:-translate-y-3 transition-all duration-200">
-          <div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
-            <img
-              src="/images/p1.jpg"
-              alt="portfolio"
-              className="w-full h-full object-cover" 
-            />
-          </div>
-        </Link>
-        <Link href="/" className="hover:-translate-y-3 transition-all duration-200">
-          <div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
-            <img
-              src="/images/p1.jpg"
-              alt="portfolio"
-              className="w-full h-full object-cover" 
-            />
-          </div>
-        </Link>
-        <Link href="/" className="hover:-translate-y-3 transition-all duration-200">
-          <div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
-            <img
-              src="/images/p1.jpg"
-              alt="portfolio"
-              className="w-full h-full object-cover" 
-            />
-          </div>
-        </Link>
-        <Link href="/" className="hover:-translate-y-3 transition-all duration-200">
+        
+        <Link href="/" className="hover:-translate-y-3 transition-all duration-200" data-aos="zoom-in">
           <div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
             <img
               src="/images/p1.jpg"

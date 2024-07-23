@@ -40,15 +40,18 @@ const HomePage = () => {
   });
 }, []);
 
+  const handleDownload = () => {
+    window.open('/cv/diego_soto_cv.pdf', '_blank');
+  };
 
   return (
     <div className="overflow-x-hidden">
       <div>
         <MobileNav nav={nav} closeNav={closeNav} />
         <Nav openNav={openNav} />
-        <Hero/>
+        <Hero  handleDownload={handleDownload}/>
         <div className="bg-slate-100 dark:bg-slate-800 relative z-[30]">
-          <About/>
+          <About handleDownload={handleDownload}/>
           <Services/>
           <Projects/>
           <Blog/>

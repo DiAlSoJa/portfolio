@@ -28,8 +28,8 @@ const Blog = () => {
       <section className="">
         <div className="container max-w-6xl p-6 mx-auto space-y-6 sm:space-y-12">
           <div className="grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {posts.map(post => (
-              <BlogCard key={post._id} post={post} />
+            {posts.map((post,index) => (
+              <BlogCard key={index} post={post} />
             ))}
           </div>
         </div>
@@ -41,9 +41,10 @@ const Blog = () => {
 export default Blog;
 
 const BlogCard = ({ post }:{post:any}) => {
-  console.log(post)
   return (
-    <Link href={`https://www.sanivers.com/article/${post.slug}`} className="max-w-sm mx-auto group hover:no-underline focus:no-underline shadow rounded-md  sm:block dark:bg-slate-700">
+  <div data-aos="zoom-in">
+
+    <Link href={`https://www.sanivers.com/article/${post.slug}`}  className="max-w-sm mx-auto group hover:no-underline focus:no-underline shadow rounded-md  sm:block dark:bg-slate-700">
       <Image 
         alt={post.slug}
         width="100"
@@ -57,5 +58,6 @@ const BlogCard = ({ post }:{post:any}) => {
         <p>{post.description}</p>
       </div>
     </Link>
+  </div>
   );
 }

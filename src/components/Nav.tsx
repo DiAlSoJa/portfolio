@@ -8,7 +8,7 @@ interface Props {
 
 const Nav = ({ openNav }: Props) => {
     return (
-        <header className="w-full fixed z-50 top-0 h-12  dark:bg-slate-800 bg-slate-100 shadow-md">
+        <header className="w-full fixed z-50 top-0 h-16 dark:bg-slate-800 bg-slate-100 shadow-md">
             <div className="flex items-center  justify-between mx-auto h-full max-w-6xl px-4">
                 
                 <div className="text-lg text-slate-800 dark:text-slate-100 font-bold cursor-pointer">

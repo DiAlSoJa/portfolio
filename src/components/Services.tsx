@@ -18,12 +18,12 @@ const ServiceCard : React.FC<ServiceCardProps> = ({ title, description, icon }) 
 
 const Services = () => {
   const services = [
-    { title: 'Web Development', description: 'Expertise in modern web technologies to build engaging websites.', icon: '🌐' },
-    { title: 'Photography', description: 'Capturing stunning and vivid photographs for all occasions.', icon: '📷' },
-    { title: 'Web Design', description: 'Designing aesthetically pleasing and user-friendly websites.', icon: '🎨' },
-    { title: 'App Developing', description: 'Developing mobile applications that solve real-world problems.', icon: '📱' },
-    { title: 'Video Editing', description: 'Creating compelling video content for diverse platforms.', icon: '🎥' },
-    { title: 'SEO Expert', description: 'Optimizing websites to rank higher in search engine results.', icon: '🔍' }
+    { title: 'Desarrollo web', description: 'Experiencia en tecnologías web modernas para construir sitios web atractivos.', icon: '🌐' },
+    { title: 'Mantenimiento de Apps', description: 'Mantenimiento y actualización de aplicaciones para un rendimiento óptimo.', icon: '🔧' },
+    { title: 'Diseño web', description: 'Diseño de sitios web estéticamente agradables y fáciles de usar.', icon: '🎨' },
+    { title: 'Desarrollo de Apps', description: 'Desarrollo de aplicaciones móviles que resuelven problemas del mundo real.', icon: '📱' },
+    { title: 'Frontend', description: 'Creación de interfaces de usuario interactivas y atractivas.', icon: '💻' },
+    { title: 'Backend', description: 'Desarrollo y mantenimiento del lado del servidor para aplicaciones web.', icon: '🔙' }
   ];
 
   return (

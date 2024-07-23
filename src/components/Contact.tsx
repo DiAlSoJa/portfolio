@@ -1,12 +1,10 @@
-import React from 'react'
-import { Input } from './ui/input';
-import { Textarea } from './ui/textarea';
-import { Button } from './ui/button';
+import React from 'react';
+import Formulario from './formulario';
 
 const Contact = () => {
   return (
-    <section className="py-6 md:h-screen" id="contacto">
-        <div className="flex justify-center items-center mx-auto lg:px-8  max-md:flex-col h-full">
+    <section className="py-6 md:h-screen px-4" id="contacto">
+        <div className="flex justify-center items-center mx-auto lg:px-8  max-md:flex-col h-full max-w:md">
 
             <div className="flex-1 flex items-center justify-center py-6 md:py-0 md:px-6">
                 <div className=' max-md:text-center '>
@@ -36,26 +34,8 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-
-            <form className="flex-1 flex items-center justify-center flex-col py-6 space-y-6 md:py-0 md:px-6">
-                <div className='w-[300px] shadow dark:bg-slate-900 p-5 rounded-xl'>
-                    <div className="block my-2">
-                        <span className="mb-1">Nombre Completo</span>
-                        <Input type='text' placeholder='Ingrese su nombre'/>
-                    </div>
-                    <div className="block my-2">
-                        <span className="mb-1">Correo electronico</span>
-                        <Input type='email' placeholder='Ingrese su correo electronico'/>
-                    </div>
-                    <div className="block my-2">
-                        <span className="mb-1">Mensage</span>
-                        <Textarea placeholder='ingrese su mensaje'/>
-                    </div>
-                        <Button>
-                            enviar 
-                        </Button>
-                </div>
-            </form>
+            
+            <Formulario/>
         </div>
     </section>
   );
