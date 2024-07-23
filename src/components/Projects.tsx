@@ -13,10 +13,28 @@ const Projects = () => {
       </h2>
       <div className="w-[80%] pt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[2rem]">
         
-        <Link href="/" className="hover:-translate-y-3 transition-all duration-200" data-aos="zoom-in">
+        <Link href="https://www.sanivers.com" className="hover:-translate-y-3 transition-all duration-200" data-aos="zoom-in">
           <div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
             <img
-              src="/images/p1.jpg"
+              src="/images/sanivers.png"
+              alt="portfolio"
+              className="w-full h-full object-cover" 
+            />
+          </div>
+        </Link>
+        <Link href="https://carpetas-docs.vercel.app/" className="hover:-translate-y-3 transition-all duration-200" data-aos="zoom-in">
+          <div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
+            <img
+              src="/images/carpetas.png"
+              alt="portfolio"
+              className="w-full h-full object-cover" 
+            />
+          </div>
+        </Link>
+        <Link href="https://projecto-idiomas.vercel.app/es/courses" className="hover:-translate-y-3 transition-all duration-200" data-aos="zoom-in">
+          <div className="transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]">
+            <img
+              src="/images/idiomas.png"
               alt="portfolio"
               className="w-full h-full object-cover" 
             />
