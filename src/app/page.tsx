@@ -13,6 +13,7 @@ import React, { useEffect, useState } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import Contact from "@/components/Contact";
+import BentoGrid from "@/components/BentoGrid";
 
 const HomePage = () => {
   const [nav, setNav] = useState(false);
