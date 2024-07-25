@@ -29,10 +29,9 @@ const Projects = () => {
               <div className="flex gap-2 flex-wrap">
                 <Badge>Next js</Badge>
                 <Badge>React js</Badge>
-                <Badge>Tailwind</Badge>
-                <Badge>CSS</Badge>
+                <Badge>Tailwind Css</Badge>
                 <Badge>Shadcn-ui</Badge>
-                <Badge>SQL</Badge>
+                <Badge>Mongo DB</Badge>
               </div>
             </div>
           </div>
@@ -52,10 +51,11 @@ const Projects = () => {
               <h3 className="dark:text-slate-100 text-slate-900 text-xl mb-3">Carpetas publicas</h3>
               <div className="flex gap-2 flex-wrap">
                 <Badge>Next js</Badge>
-                <Badge>React js</Badge>
+                <Badge>Typescript</Badge>
                 <Badge>Tailwind</Badge>
                 <Badge>CSS</Badge>
                 <Badge>Shadcn-ui</Badge>
+                <Badge>Prisma</Badge>
                 <Badge>SQL</Badge>
               </div>
             </div>
@@ -79,12 +79,35 @@ const Projects = () => {
                 <Badge>Tailwind</Badge>
                 <Badge>CSS</Badge>
                 <Badge>Shadcn-ui</Badge>
-                <Badge>SQL</Badge>
+                <Badge>PostgreSQL</Badge>
+                <Badge>Drizzle ORM</Badge>
               </div>
             </div>
           </div>
         </Link>
+        <Link href="https://dashboard-sanivers.vercel.app/"  data-aos="zoom-in">
+          <div className="hover:-translate-y-3 transition-all duration-200 p-2  rounded-md shadow-xl dark:bg-slate-700 border dark:border-slate-600"> 
 
+            <div className="overflow-hidden rounded-md mb-2 transform cursor-pointer relative w-[100%] h-[200px] md:h-[300px]  border dark:border-slate-600">
+              <img
+                src="/images/dashboard.png"
+                alt="portfolio"
+                className="w-full h-full object-cover" 
+              />
+            </div>
+            <div>
+              <h3 className="dark:text-slate-100 text-slate-900 text-xl mb-3">Dashboard Sanivers</h3>
+              <div className="flex gap-2 flex-wrap">
+                <Badge>Next js</Badge>
+                <Badge>React js</Badge>
+                <Badge>Tailwind</Badge>
+                <Badge>CSS</Badge>
+                <Badge>Shadcn-ui</Badge>
+                <Badge>Mongo Db</Badge>
+              </div>
+            </div>
+          </div>
+        </Link>
       </div>
     </div>
   );
